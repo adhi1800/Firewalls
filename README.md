@@ -14,11 +14,12 @@ UFW, which stands for Uncomplicated Firewall, is a user-friendly command-line to
 6. sudo ufw allow from 192.168.1.50 ( filtering from a specific source)
 
 **Testing**
+
 Try connecting to the machine with SSH when allowed → it should work.<br>
 Block SSH and try again → it should fail.<br>
 Use curl http://<ip> to test blocked vs allowed HTTP.<br>
 ---
-**Windows Firewall**
+# Windows Firewall
 <img width="1307" height="970" alt="image" src="https://github.com/user-attachments/assets/9bcb6869-7c6e-46e0-a096-96c2620618cb" />
 
 Use Windows Defender Firewall with Advanced Security.
