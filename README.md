@@ -17,6 +17,26 @@ UFW, which stands for Uncomplicated Firewall, is a user-friendly command-line to
 Try connecting to the machine with SSH when allowed → it should work.<br>
 Block SSH and try again → it should fail.<br>
 Use curl http://<ip> to test blocked vs allowed HTTP.<br>
+---
+**Windows Firewall**
+<img width="1307" height="970" alt="image" src="https://github.com/user-attachments/assets/9bcb6869-7c6e-46e0-a096-96c2620618cb" />
+
+Use Windows Defender Firewall with Advanced Security.
+
+**Steps**
+1. Press Win + R → wf.msc → Enter.
+2. Go to Inbound Rules → New Rule.
+3. Choose Port → e.g., TCP 80.
+4. Action: Block.
+5. Create another rule to Allow a specific port (e.g., TCP 22 if using OpenSSH on Windows).
+6. You can also restrict by program or IP address.
+
+
+
+
+
+
+
 
 
 
